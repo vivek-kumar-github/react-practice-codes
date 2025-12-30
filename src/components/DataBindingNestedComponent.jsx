@@ -5,6 +5,7 @@ function DataBindingNestedComponent() {
     ]
     return (
         <>
+            <h1>DataBindingNestedComponent</h1>
         <div className="container">
             <h2>Categories</h2>
             <ol>

@@ -7,6 +7,7 @@ import DataBindingComponent2 from './components/DataBindingComponent2.jsx'
 import DataBindingComponent1 from './components/DataBindingComponent1.jsx'
 import DataBindingTableComponent from './components/DataBindingTableComponent.jsx'
 import DataBindingNestedComponent from './components/DataBindingNestedComponent.jsx'
+import UseStateGetter from "./components/useStateGetter.jsx";
 
 
 createRoot(document.getElementById('root')).render(
@@ -16,5 +17,6 @@ createRoot(document.getElementById('root')).render(
     <DataBindingComponent2 />
     <DataBindingTableComponent />
     <DataBindingNestedComponent />
+      <UseStateGetter />
   </StrictMode>,
 )

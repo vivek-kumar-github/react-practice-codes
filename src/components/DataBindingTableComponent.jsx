@@ -5,6 +5,7 @@ function DataBindingTableComponent() {
     ]
     return (
         <>
+            <h1>DataBindingTableComponent</h1>
         <div className="container">
             <h2>Product Table</h2>
             <table className="table table-hover">

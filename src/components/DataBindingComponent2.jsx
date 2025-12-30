@@ -2,6 +2,7 @@ function DataBindingComponent2() {
     const categories = ["All", "Electronics", "Footwear", "Fashion"]
     return (
         <>
+            <h1>DataBindingComponent2</h1>
             <div className="container-fluid">
                 <h2>Categories</h2>
                 <ol>

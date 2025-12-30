@@ -6,6 +6,7 @@ function DataBindingComponent1() {
     }
     return (
         <>
+            <h1>DataBindingComponent1</h1>
             <div className="container">
                 <h2>Product Details</h2>
                 <dl>
