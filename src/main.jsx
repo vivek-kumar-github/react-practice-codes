@@ -6,6 +6,7 @@ import '../node_modules/bootstrap/dist/css/bootstrap.css'
 import DataBindingComponent2 from './components/DataBindingComponent2.jsx'
 import DataBindingComponent1 from './components/DataBindingComponent1.jsx'
 import DataBindingTableComponent from './components/DataBindingTableComponent.jsx'
+import DataBindingNestedComponent from './components/DataBindingNestedComponent.jsx'
 
 
 createRoot(document.getElementById('root')).render(
@@ -14,5 +15,6 @@ createRoot(document.getElementById('root')).render(
     <DataBindingComponent1 />
     <DataBindingComponent2 />
     <DataBindingTableComponent />
+    <DataBindingNestedComponent />
   </StrictMode>,
 )
