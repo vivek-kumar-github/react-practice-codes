@@ -8,6 +8,7 @@ export default function EventBindingComponent() {
     }
     return (
         <>
+            <h1>EventBindingComponent</h1>
             <div className="container-fluid">
                 <dl>
                     <dt>User Name</dt>

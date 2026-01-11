@@ -10,13 +10,15 @@ import DataBindingNestedComponent from './components/DataBindingNestedComponent.
 import UseStateGetter from "./components/useStateGetter.jsx";
 import NASA_API_DataFetching from './components/NASA_API_DataFetching.jsx'
 import EventBindingComponent from "./components/EventBindingComponent.jsx";
+import TwoWayBindingComponent from './components/TwoWayBindingComponent.jsx'
 
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
     {/* <App /> */}
     {/* <NASA_API_DataFetching /> */}
-      <EventBindingComponent />
+    <TwoWayBindingComponent />
+    <EventBindingComponent />
     <DataBindingComponent1 />
     <DataBindingComponent2 />
     <DataBindingTableComponent />
