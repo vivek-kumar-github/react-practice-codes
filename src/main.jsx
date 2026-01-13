@@ -14,12 +14,14 @@ import TwoWayBindingComponent from './components/TwoWayBindingComponent.jsx'
 import ClassComponent from './components/ClassComponent.jsx'
 import LoginComponent from './components/LoginComponent.jsx'
 import FormValidationComponent from './components/FormValidationComponent.jsx'
+import FormikFormComponent from './components/FormikFormComponent.jsx'
 
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
     {/* <App /> */}
     {/* <NASA_API_DataFetching /> */}
+    <FormikFormComponent />
     <FormValidationComponent />
     <LoginComponent />
     <ClassComponent />
