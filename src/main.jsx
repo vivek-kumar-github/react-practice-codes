@@ -13,12 +13,14 @@ import EventBindingComponent from "./components/EventBindingComponent.jsx";
 import TwoWayBindingComponent from './components/TwoWayBindingComponent.jsx'
 import ClassComponent from './components/ClassComponent.jsx'
 import LoginComponent from './components/LoginComponent.jsx'
+import FormValidationComponent from './components/FormValidationComponent.jsx'
 
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
     {/* <App /> */}
     {/* <NASA_API_DataFetching /> */}
+    <FormValidationComponent />
     <LoginComponent />
     <ClassComponent />
     <TwoWayBindingComponent />
