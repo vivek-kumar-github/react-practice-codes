@@ -15,12 +15,14 @@ import ClassComponent from './components/ClassComponent.jsx'
 import LoginComponent from './components/LoginComponent.jsx'
 import FormValidationComponent from './components/FormValidationComponent.jsx'
 import FormikFormComponent from './components/FormikFormComponent.jsx'
+import FormikFormValiditationComponent from './components/FormikFormValidationComponent.jsx'
 
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
     {/* <App /> */}
     {/* <NASA_API_DataFetching /> */}
+    <FormikFormValiditationComponent />
     <FormikFormComponent />
     <FormValidationComponent />
     <LoginComponent />
