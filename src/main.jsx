@@ -16,12 +16,14 @@ import LoginComponent from './components/LoginComponent.jsx'
 import FormValidationComponent from './components/FormValidationComponent.jsx'
 import FormikFormComponent from './components/FormikFormComponent.jsx'
 import FormikFormValiditationComponent from './components/FormikFormValidationComponent.jsx'
+import YupFormValidationComponent from './components/YupFormValidationComponent.jsx'
 
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
     {/* <App /> */}
     {/* <NASA_API_DataFetching /> */}
+    <YupFormValidationComponent />
     <FormikFormValiditationComponent />
     <FormikFormComponent />
     <FormValidationComponent />
