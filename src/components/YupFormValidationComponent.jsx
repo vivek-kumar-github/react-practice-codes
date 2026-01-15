@@ -4,6 +4,7 @@ import * as yup from "yup";
 export default function YupFormValidationComponent() {
     return (
         <div className="container-fluid">
+            <h1>YupFormValidationComponent</h1>
             <h3>Register User</h3>
             <Formik
                 initialValues={{
