@@ -19,12 +19,14 @@ import FormikFormValiditationComponent from './components/FormikFormValidationCo
 import YupFormValidationComponent from './components/YupFormValidationComponent.jsx'
 import ComponentLifeCycleClassComponent from './components/ComponentLifeCycleClassComponent.jsx'
 import ReactHookDemoComponent from './components/ReactHookDemoComponent.jsx'
+import ContextDemoComponent from './components/ContextDemoComponent.jsx'
 
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
     {/* <App /> */}
     {/* <NASA_API_DataFetching /> */}
+    <ContextDemoComponent />
     <ReactHookDemoComponent />
     <ComponentLifeCycleClassComponent />
     <YupFormValidationComponent />
