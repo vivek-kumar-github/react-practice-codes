@@ -21,6 +21,7 @@ function DataBindingComponent2() {
                     }
                 </select>
             </div>
+            <hr />
         </>
     )
 }

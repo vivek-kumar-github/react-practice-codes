@@ -1,4 +1,4 @@
-import {useState} from "react";
+import { useState } from "react";
 
 function useStateGetter() {
     const [Products, setProducts] = useState(["TV", "Mobile", "Shoe"])
@@ -9,11 +9,12 @@ function useStateGetter() {
                 <ol>
                     {
                         Products.map(product =>
-                        <li key={product.id}>{product}</li>
+                            <li key={product.id}>{product}</li>
                         )
                     }
                 </ol>
             </div>
+            <hr />
         </>
     )
 }

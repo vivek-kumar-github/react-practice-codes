@@ -23,22 +23,23 @@ export default function LoginComponent() {
 
     return (
         <>
-        <h1>LoginComponent</h1>
-        <div className="container-fluid">
-            <div style={theme}>
-                <h3>User Login</h3>
-                <div className="form-switch">
-                    <input onChange={handleThemeChange} className="form-check-input" type="checkbox" />Dark Theme
+            <h1>LoginComponent</h1>
+            <div className="container-fluid">
+                <div style={theme}>
+                    <h3>User Login</h3>
+                    <div className="form-switch">
+                        <input onChange={handleThemeChange} className="form-check-input" type="checkbox" />Dark Theme
+                    </div>
+                    <dl>
+                        <dt>User Name</dt>
+                        <dd><input type="text" /></dd>
+                        <dt>Password</dt>
+                        <dd><input type="password" /></dd>
+                    </dl>
+                    <button>Login</button>
                 </div>
-                <dl>
-                    <dt>User Name</dt>
-                    <dd><input type="text" /></dd>
-                    <dt>Password</dt>
-                    <dd><input type="password" /></dd>
-                </dl>
-                <button>Login</button>
             </div>
-        </div>
+            <hr />
         </>
     )
 }

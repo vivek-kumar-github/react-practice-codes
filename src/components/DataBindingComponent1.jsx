@@ -19,6 +19,7 @@ function DataBindingComponent1() {
                     <dd>{(Product.Stock == true) ? "Availabe" : "Out of Stock"}</dd>
                 </dl>
             </div>
+            <hr />
         </>
     )
 }

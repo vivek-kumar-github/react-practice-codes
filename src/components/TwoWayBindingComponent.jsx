@@ -77,6 +77,7 @@ export default function TwoWayBindingComponent() {
                     </div>
                 </div>
             </div>
+            <hr />
         </>
     )
 }

@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 
 export default function EventBindingComponent() {
-    const [ userName, setUserName ] = useState("Vivek");
+    const [userName, setUserName] = useState("Vivek");
 
     function handleUserName(e) {
         setUserName(e.target.value);
@@ -16,6 +16,7 @@ export default function EventBindingComponent() {
                 </dl>
                 <h3>Hello ! {userName}</h3>
             </div>
+            <hr />
         </>
     )
 }

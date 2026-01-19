@@ -56,7 +56,8 @@ export default class ComponentLifeCycleClassComponent extends Component {
                 <button className="btn btn-primary" onClick={() => this.setState({ count: this.state.count + 1 })}>
                     Update Count ({this.state.count})
                 </button>
+                <hr />
             </div>
-        );
+        )
     }
 }

@@ -65,6 +65,7 @@ export default function YupFormValidationComponent() {
                     )
                 }
             </Formik>
+            <hr />
         </div>
     )
 }

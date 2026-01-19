@@ -90,6 +90,7 @@ export default function FormValidationComponent() {
                     >Register</button>
                 </div>
             </div>
+            <hr />
         </div>
-    );
+    )
 }

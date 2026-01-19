@@ -20,12 +20,17 @@ import YupFormValidationComponent from './components/YupFormValidationComponent.
 import ComponentLifeCycleClassComponent from './components/ComponentLifeCycleClassComponent.jsx'
 import ReactHookDemoComponent from './components/ReactHookDemoComponent.jsx'
 import ContextDemoComponent from './components/ContextDemoComponent.jsx'
+import { CookiesProvider } from 'react-cookie'
+import CookieDemoComponent from './components/CookieDemoComponent.jsx'
 
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
     {/* <App /> */}
     {/* <NASA_API_DataFetching /> */}
+    <CookiesProvider>
+      <CookieDemoComponent />
+    </CookiesProvider>
     <ContextDemoComponent />
     <ReactHookDemoComponent />
     <ComponentLifeCycleClassComponent />

@@ -17,7 +17,7 @@ function NASA_API_DataFetching() {
                 <div className="d-flex flex-wrap">
                     {
                         mars.photos.map(photo =>
-                            <div  className="card p-2 m-2 w-25">
+                            <div className="card p-2 m-2 w-25">
                                 <img src={photo.img_src} className="card-img-top" height="100" />
                                 <div className="card-header">
                                     <h3>{photo.camera.full_name}</h3>
@@ -30,6 +30,7 @@ function NASA_API_DataFetching() {
                     }
                 </div>
             </div>
+            <hr />
         </>
     )
 }

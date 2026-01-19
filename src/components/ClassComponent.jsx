@@ -41,6 +41,7 @@ export default class ClassComponent extends React.Component {
                         </dd>
                     </dl>
                 </div>
+                <hr />
             </>
         )
     }

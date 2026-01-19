@@ -1,4 +1,4 @@
-import React, {useContext, useState} from "react";
+import React, { useContext, useState } from "react";
 let UserDetailsContext = React.createContext(null)
 
 export default function ContextDemoComponent() {
@@ -42,6 +42,7 @@ export default function ContextDemoComponent() {
                 {/* <button onClick={handleSet}>Set Data</button> */}
                 <HeaderComponent />
             </div>
+            <hr />
         </UserDetailsContext.Provider>
     )
 }
@@ -49,8 +50,8 @@ export default function ContextDemoComponent() {
 function HeaderComponent() {
     let userDetails = useContext(UserDetailsContext)
 
-    return(
-        <div className="bg-info text-white" style={{height:"150px", padding:"10px"}}>
+    return (
+        <div className="bg-info text-white" style={{ height: "150px", padding: "10px" }}>
             <h3>Home - {userDetails.UserName}</h3>
             <NavbarComponent />
         </div>
@@ -60,7 +61,7 @@ function HeaderComponent() {
 function NavbarComponent() {
     let userdetails = useContext(UserDetailsContext)
 
-    return(
+    return (
         <div className="btn-toolbar bg-dark text-white justify-content-between" >
             <div className="btn-group">
                 <button className="btn btn-dark">Amazon</button>

@@ -39,6 +39,7 @@ export default function FormikFormComponent() {
                     <button>Register</button>
                 </form>
             </div>
+            <hr />
         </>
     )
 }

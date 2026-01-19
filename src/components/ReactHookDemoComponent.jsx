@@ -16,8 +16,8 @@ export default function ReactHookDemoComponent() {
             <h1>ReactHookDemoComponent</h1>
             <button onClick={handleSuccessClick}>Success</button>
             <button onClick={handleErrorClick}>Invalid</button>
-            <hr />
             <div>{msg}</div>
+            <hr />
         </div>
     )
 }
