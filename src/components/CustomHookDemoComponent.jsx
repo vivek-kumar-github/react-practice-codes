@@ -1,7 +1,7 @@
 import { useFetchData } from "../custom_hooks/useFetchData";
 
 export default function CustomHookDemoComponent() {
-    const {data} = useFetchData("https://fakestoreapi.com/products")
+    const { data } = useFetchData("https://fakestoreapi.com/products")
 
     return (
         <div className="container-fluid">
