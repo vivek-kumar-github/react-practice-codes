@@ -23,12 +23,14 @@ import ContextDemoComponent from './components/ContextDemoComponent.jsx'
 import { CookiesProvider } from 'react-cookie'
 import CookieDemoComponent from './components/CookieDemoComponent.jsx'
 import ReducerDemoComponent from './components/ReducerDemoComponent.jsx'
+import CustomHookDemoComponent from './components/CustomHookDemoComponent.jsx'
 
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
     {/* <App /> */}
     {/* <NASA_API_DataFetching /> */}
+    <CustomHookDemoComponent />
     <ReducerDemoComponent />
     <CookiesProvider>
       <CookieDemoComponent />
