@@ -3,22 +3,55 @@ import cors from "cors";
 import { MongoClient } from "mongodb";
 
 let connectionString = "mongodb://127.0.0.1:27017";
-let app = express();
 
+const app = express();
+app.use(express.urlencoded({
+    extended: true
+}));
 app.use(express.json());
+app.use(cors());
+
+async function getDbCollection() {
+    const client = new MongoClient(connectionString);
+    await client.connect();
+    return {
+        client,
+        collection: client.db("reactdb").collection("tblusers")
+    }
+}
 
 app.get("/getusers", async (req, res) => {
-    const client = new MongoClient(connectionString);
+    const { client, collection } = await getDbCollection();
 
     try {
         await client.connect();
-        let database = client.db("reactdb");
-
-        let documents = await database.collection("tblusers").find({}).toArray();
-
+        const documents = await collection.find({}).toArray();
         res.send(documents);
     } catch (err) {
         console.error("Database Error: ", err);
+        res.status(500).send("Internal Server Error");
+    } finally {
+        await client.close();
+    }
+});
+
+app.post("/registeruser", async (req, res) => {
+    const userdetails = {
+        UserId: req.body.UserId,
+        UserName: req.body.UserName,
+        Password: req.body.Password,
+        Age: parseInt(req.body.Age),
+        Mobile: req.body.Mobile,
+        Subscribed: (req.body.Subscribed == "true") ? true : false
+    }
+    const { client, collection } = await getDbCollection();
+
+    try {
+        await collection.insertOne(userdetails);
+        console.log("Record Inserted");
+        res.status(201).json({ message: "User Registered Successfully" });
+    } catch (err) {
+        console.log("Insert Error: ", err);
         res.status(500).send("Internal Server Error");
     } finally {
         await client.close();
