@@ -5,6 +5,7 @@ export default function CustomHookDemoComponent() {
 
     return (
         <div className="container-fluid">
+            <h1>CustomHookDemoComponent</h1>
             <h3>Products</h3>
             <ol>
                 {
@@ -13,6 +14,7 @@ export default function CustomHookDemoComponent() {
                     )
                 }
             </ol>
+            <hr />
         </div>
     )
 }

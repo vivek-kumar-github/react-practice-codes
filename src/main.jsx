@@ -24,12 +24,14 @@ import { CookiesProvider } from 'react-cookie'
 import CookieDemoComponent from './components/CookieDemoComponent.jsx'
 import ReducerDemoComponent from './components/ReducerDemoComponent.jsx'
 import CustomHookDemoComponent from './components/CustomHookDemoComponent.jsx'
+import JQueryAjaxDemoComponent from './components/jQueryAjaxDemoComponent.jsx'
 
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
     {/* <App /> */}
     {/* <NASA_API_DataFetching /> */}
+    <JQueryAjaxDemoComponent />
     <CustomHookDemoComponent />
     <ReducerDemoComponent />
     <CookiesProvider>
