@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import $ from "jquery";
 import { useFormik } from "formik";
 
-export default function AjaxJqueryUserRegister() {
+export default function AjaxJqueryApiUserRegister() {
     const [users, setUsers] = useState([]);
     const [userError, setUserError] = useState("")
 
@@ -48,7 +48,7 @@ export default function AjaxJqueryUserRegister() {
 
     return (
         <div className="container-fluid">
-            <h1>AjaxJqueryUserRegister</h1>
+            <h1>AjaxJqueryApiUserRegister</h1>
             <h3>Register User</h3>
             <form onSubmit={formik.handleSubmit}>
                 <dl>

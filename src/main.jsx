@@ -25,16 +25,18 @@ import CookieDemoComponent from './components/CookieDemoComponent.jsx'
 import ReducerDemoComponent from './components/ReducerDemoComponent.jsx'
 import CustomHookDemoComponent from './components/CustomHookDemoComponent.jsx'
 import JQueryAjaxDemoComponent from './components/jQueryAjaxDemoComponent.jsx'
-import AjaxJqueryUserRegister from './components/AjaxJqueryUserRegister.jsx'
+import AjaxJqueryApiUserRegister from './components/AjaxJqueryApiUserRegister.jsx'
 import AxiosApiGetDemoComponent from './components/AxiosApiGetDemoComponent.jsx'
+import SPARoutingComponent from './components/SPARoutingComponent.jsx'
 
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
     {/* <App /> */}
     {/* <NASA_API_DataFetching /> */}
+    <SPARoutingComponent />
     <AxiosApiGetDemoComponent />
-    <AjaxJqueryUserRegister />
+    <AjaxJqueryApiUserRegister />
     <JQueryAjaxDemoComponent />
     <CustomHookDemoComponent />
     <ReducerDemoComponent />
