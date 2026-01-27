@@ -26,12 +26,14 @@ import ReducerDemoComponent from './components/ReducerDemoComponent.jsx'
 import CustomHookDemoComponent from './components/CustomHookDemoComponent.jsx'
 import JQueryAjaxDemoComponent from './components/jQueryAjaxDemoComponent.jsx'
 import AjaxJqueryUserRegister from './components/AjaxJqueryUserRegister.jsx'
+import AxiosApiGetDemoComponent from './components/AxiosApiGetDemoComponent.jsx'
 
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
     {/* <App /> */}
     {/* <NASA_API_DataFetching /> */}
+    <AxiosApiGetDemoComponent />
     <AjaxJqueryUserRegister />
     <JQueryAjaxDemoComponent />
     <CustomHookDemoComponent />
