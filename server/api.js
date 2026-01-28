@@ -42,7 +42,10 @@ app.post("/registeruser", async (req, res) => {
         Password: req.body.Password,
         Age: parseInt(req.body.Age),
         Mobile: req.body.Mobile,
-        Subscribed: (req.body.Subscribed == "true") ? true : false
+        Subscribed:
+            req.body.Subscribed === true ||
+            req.body.Subscribed === "true" ||
+            req.body.Subscribed === "on"
     }
     const { client, collection } = await getDbCollection();
 

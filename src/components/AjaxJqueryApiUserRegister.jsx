@@ -64,7 +64,16 @@ export default function AjaxJqueryApiUserRegister() {
                     <dt>Mobile</dt>
                     <dd><input type="text" value={formik.values.Mobile} onChange={formik.handleChange} name="Mobile" /></dd>
                     <dt>Subscription</dt>
-                    <dd className="form-switch"><input className="form-check-input" type="checkbox" checked={formik.values.Subscribed} onChange={formik.handleChange} name="Subscribed" /> Yes </dd>
+                    <dd className="form-switch">
+                        <input
+                            className="form-check-input"
+                            type="checkbox"
+                            name="Subscribed"
+                            checked={formik.values.Subscribed}
+                            onChange={e => formik.setFieldValue("Subscribed", e.target.checked)}
+                        />{" "}
+                        Yes
+                    </dd>
                 </dl>
                 <button className="btn btn-primary">Register</button>
             </form>

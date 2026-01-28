@@ -28,12 +28,14 @@ import JQueryAjaxDemoComponent from './components/jQueryAjaxDemoComponent.jsx'
 import AjaxJqueryApiUserRegister from './components/AjaxJqueryApiUserRegister.jsx'
 import AxiosApiGetDemoComponent from './components/AxiosApiGetDemoComponent.jsx'
 import SPARoutingComponent from './components/SPARoutingComponent.jsx'
+import IshopIndex from './ishop/IshopIndex.jsx'
 
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
     {/* <App /> */}
     {/* <NASA_API_DataFetching /> */}
+    <IshopIndex />
     <SPARoutingComponent />
     <AxiosApiGetDemoComponent />
     <AjaxJqueryApiUserRegister />
