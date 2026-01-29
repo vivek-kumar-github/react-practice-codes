@@ -3,39 +3,32 @@ import cors from "cors";
 import { MongoClient } from "mongodb";
 
 let connectionString = "mongodb://127.0.0.1:27017";
-
 const app = express();
-app.use(express.urlencoded({
-    extended: true
-}));
+
+app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 app.use(cors());
 
-async function getDbCollection() {
-    const client = new MongoClient(connectionString);
+const client = new MongoClient(connectionString);
+
+async function getCollection(collectionName) {
     await client.connect();
-    return {
-        client,
-        collection: client.db("reactdb").collection("tblusers")
-    }
+    return client.db("reactdb").collection(collectionName);
 }
 
 app.get("/getusers", async (req, res) => {
-    const { client, collection } = await getDbCollection();
-
     try {
-        await client.connect();
+        const collection = await getCollection("tblusers");
         const documents = await collection.find({}).toArray();
         res.send(documents);
     } catch (err) {
         console.error("Database Error: ", err);
         res.status(500).send("Internal Server Error");
-    } finally {
-        await client.close();
     }
 });
 
 app.post("/registeruser", async (req, res) => {
+    try {
     const userdetails = {
         UserId: req.body.UserId,
         UserName: req.body.UserName,
@@ -46,18 +39,25 @@ app.post("/registeruser", async (req, res) => {
             req.body.Subscribed === true ||
             req.body.Subscribed === "true" ||
             req.body.Subscribed === "on"
-    }
-    const { client, collection } = await getDbCollection();
+    };
 
-    try {
-        await collection.insertOne(userdetails);
-        console.log("Record Inserted");
-        res.status(201).json({ message: "User Registered Successfully" });
+    const collection = await getCollection("tblusers");
+    await collection.insertOne(userdetails);
+    res.status(201).json({message: "User Registered Successfully"});
     } catch (err) {
-        console.log("Insert Error: ", err);
+        console.error("Insert Error: ", err);
         res.status(500).send("Internal Server Error");
-    } finally {
-        await client.close();
+    }
+});
+
+app.get("/getproducts", async (req, res) => {
+    try {
+        const collection = await getCollection("tblproducts");
+        const documents = await collection.find({}).toArray();
+        res.send(documents);
+    } catch (err) {
+        console.error("Database Error : ", err);
+        res.status(500).send("Internal Server Error");
     }
 });
 
