@@ -61,6 +61,29 @@ app.get("/getproducts", async (req, res) => {
     }
 });
 
+app.get("/getcategories", async (req, res) => {
+    try {
+        const collection = await getCollection("tblcategories");
+        const documents = await collection.find({}).toArray();
+        res.send(documents);
+    } catch (err) {
+        console.error("Database Error : ", err);
+        res.status(500).send("Internal Server Error");
+    }
+});
+
+app.get("/getproduct/:id", async (req, res) => {
+    let productId = parseInt(req.params.id);
+    try {
+        const collection = await getCollection("tblproducts");
+        const documents = await collection.find({id: productId}).toArray();
+        res.send(documents);
+    } catch (err) {
+        console.error("Database Error : ", err);
+        res.status(500).send("Internal Server Error");
+    }
+});
+
 app.listen(4000, () => {
     console.log("Server started at http://127.0.0.1:4000");
 });
