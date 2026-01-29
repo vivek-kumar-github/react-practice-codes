@@ -1,14 +1,14 @@
 import { Link } from "react-router-dom";
 
 export default function IshopHome() {
-    return(
+    return (
         <>
-        <div>
-            <h2>Shopping Home</h2>
-            <Link to="/register"> New Register</Link>
-            <span> | </span>
-            <Link to="/login">Existing User</Link>
-        </div>
+            <div>
+                <h2>Shopping Home</h2>
+                <Link to="/register"> New Register</Link>
+                <span> | </span>
+                <Link to="/login">Existing User</Link>
+            </div>
         </>
     )
 }

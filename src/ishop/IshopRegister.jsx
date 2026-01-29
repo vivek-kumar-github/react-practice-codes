@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, Link } from "react-router-dom";
 import { useFormik } from "formik";
 import axios from "axios";
 import $ from "jquery";
@@ -95,6 +95,8 @@ export default function IshopRegister() {
                         </dd>
                     </dl>
                     <button type="submit" className="btn btn-primary w-100">Register</button>
+                    <br />
+                    <Link to="/login">Already have an account?</Link>
                 </form>
             </div>
         </div>
