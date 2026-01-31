@@ -29,12 +29,14 @@ import AjaxJqueryApiUserRegister from './components/AjaxJqueryApiUserRegister.js
 import AxiosApiGetDemoComponent from './components/AxiosApiGetDemoComponent.jsx'
 import SPARoutingComponent from './components/SPARoutingComponent.jsx'
 import IshopIndex from './ishop/IshopIndex.jsx'
+import MainComponent from './BankApp/MainComponent.jsx'
 
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
     {/* <App /> */}
     {/* <NASA_API_DataFetching /> */}
+    <MainComponent />
     <IshopIndex />
     <SPARoutingComponent />
     <AxiosApiGetDemoComponent />
