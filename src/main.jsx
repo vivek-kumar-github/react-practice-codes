@@ -34,11 +34,11 @@ import MainComponent from './BankApp/MainComponent.jsx'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    {/* <App /> */}
-    {/* <NASA_API_DataFetching /> */}
-    <MainComponent />
+    {/* <App />
+    <NASA_API_DataFetching />
+    <MainComponent /> */}
     <IshopIndex />
-    <SPARoutingComponent />
+    {/* <SPARoutingComponent />
     <AxiosApiGetDemoComponent />
     <AjaxJqueryApiUserRegister />
     <JQueryAjaxDemoComponent />
@@ -62,6 +62,6 @@ createRoot(document.getElementById('root')).render(
     <DataBindingComponent2 />
     <DataBindingTableComponent />
     <DataBindingNestedComponent />
-    <UseStateGetter />
+    <UseStateGetter /> */}
   </StrictMode>,
 )
