@@ -6,14 +6,16 @@ export function useFetchData(url) {
     useEffect(() => {
         setLoading(true)
         fetch(url)
-            .then(Response => Response.json())
-            .then(data => {
-                setData(data)
-            })
-            .catch((ex) => {
-                console.error(ex)
-                setLoading(false)
-            })
-    }, [url])
+        .then((res) => res.json())
+        .then((result) => {
+            setData(result.users || result)
+        })
+        .catch((err) => {
+            console.error(err);
+        })
+        .finally(() => {
+            setLoading(false);
+        });
+    }, [url]);
     return { data, loading }
 }

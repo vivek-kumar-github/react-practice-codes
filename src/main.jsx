@@ -36,6 +36,7 @@ import { FormComponent } from './college_react_practice/FormComponent.jsx'
 import { App } from './college_react_practice/useEffectComponent.jsx'
 import searchParamsRouter from './college_react_practice/searcParamsRouter.jsx'
 import CustomHookTest from './college_react_practice/CustomHookTest.jsx'
+import UseFetchCustomHookTest from './college_react_practice/UseFetchCustomHookTest.jsx'
 
 // const data = {
 //   name: "Vivek",
@@ -82,7 +83,8 @@ createRoot(document.getElementById('root')).render(
     {/* <FormComponent /> */}
     {/* <App /> */}
     {/* <searchParamsRouter /> */}
-    <CustomHookTest />
+    {/* <CustomHookTest /> */}
+    <UseFetchCustomHookTest />
 
   </StrictMode>,
 )
