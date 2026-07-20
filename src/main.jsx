@@ -1,6 +1,6 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
-// import './index.css'
+import './index.css'
 // import App from './App.jsx'
 import '../node_modules/bootstrap/dist/css/bootstrap.css'
 import DataBindingComponent2 from './components/DataBindingComponent2.jsx'
@@ -30,38 +30,59 @@ import AxiosApiGetDemoComponent from './components/AxiosApiGetDemoComponent.jsx'
 import SPARoutingComponent from './components/SPARoutingComponent.jsx'
 import IshopIndex from './ishop/IshopIndex.jsx'
 import MainComponent from './BankApp/MainComponent.jsx'
+import HeaderComponent from './college_react_practice/HeaderComponent.jsx'
+import { Greet } from './college_react_practice/GreetComponent.jsx'
+import { FormComponent } from './college_react_practice/FormComponent.jsx'
+import { App } from './college_react_practice/useEffectComponent.jsx'
+import searchParamsRouter from './college_react_practice/searcParamsRouter.jsx'
+import CustomHookTest from './college_react_practice/CustomHookTest.jsx'
 
+// const data = {
+//   name: "Vivek",
+//   age: 22
+// }
+
+// const sum = (a, b) => {
+//   return a + b;
+// }
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    {/* <App />
-    <NASA_API_DataFetching />
-    <MainComponent /> */}
-    <IshopIndex />
-    {/* <SPARoutingComponent />
-    <AxiosApiGetDemoComponent />
-    <AjaxJqueryApiUserRegister />
-    <JQueryAjaxDemoComponent />
-    <CustomHookDemoComponent />
-    <ReducerDemoComponent />
-    <CookiesProvider>
-      <CookieDemoComponent />
-    </CookiesProvider>
-    <ContextDemoComponent />
-    <ReactHookDemoComponent />
-    <ComponentLifeCycleClassComponent />
-    <YupFormValidationComponent />
-    <FormikFormValiditationComponent />
-    <FormikFormComponent />
-    <FormValidationComponent />
-    <LoginComponent />
-    <ClassComponent />
-    <TwoWayBindingComponent />
-    <EventBindingComponent />
-    <DataBindingComponent1 />
-    <DataBindingComponent2 />
-    <DataBindingTableComponent />
-    <DataBindingNestedComponent />
-    <UseStateGetter /> */}
+    {/* <App /> */}
+    {/* <NASA_API_DataFetching /> */}
+    {/* <MainComponent /> */}
+    {/* <IshopIndex /> */}
+    {/* <SPARoutingComponent /> */}
+    {/* <AxiosApiGetDemoComponent /> */}
+    {/* <AjaxJqueryApiUserRegister /> */}
+    {/* <JQueryAjaxDemoComponent /> */}
+    {/* <CustomHookDemoComponent /> */}
+    {/* <ReducerDemoComponent /> */}
+    {/* <CookiesProvider> */}
+      {/* <CookieDemoComponent /> */}
+    {/* </CookiesProvider> */}
+    {/* <ContextDemoComponent /> */}
+    {/* <ReactHookDemoComponent /> */}
+    {/* <ComponentLifeCycleClassComponent /> */}
+    {/* <YupFormValidationComponent /> */}
+    {/* <FormikFormValiditationComponent /> */}
+    {/* <FormikFormComponent /> */}
+    {/* <FormValidationComponent /> */}
+    {/* <LoginComponent /> */}
+    {/* <ClassComponent /> */}
+    {/* <TwoWayBindingComponent /> */}
+    {/* <EventBindingComponent /> */}
+    {/* <DataBindingComponent1 /> */}
+    {/* <DataBindingComponent2 /> */}
+    {/* <DataBindingTableComponent /> */}
+    {/* <DataBindingNestedComponent /> */}
+    {/* <UseStateGetter /> */}
+    {/* <HeaderComponent  {...data} sum =  {sum}/> */}
+    {/* <Greet /> */}
+    {/* <FormComponent /> */}
+    {/* <App /> */}
+    {/* <searchParamsRouter /> */}
+    <CustomHookTest />
+
   </StrictMode>,
 )

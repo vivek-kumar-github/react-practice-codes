@@ -43,6 +43,12 @@ export default function SPARoutingComponent() {
                         </>
                     }
                     />
+                    <Route path="vivek" element={
+                        <>
+                            <h1>Hello Vivek</h1>
+                        </>
+                    }
+                    />
                 </Routes>
             </BrowserRouter>
             <hr />
